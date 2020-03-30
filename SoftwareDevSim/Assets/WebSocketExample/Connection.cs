@@ -8,6 +8,7 @@ using NativeWebSocket;
 public class Connection : MonoBehaviour
 {
   WebSocket websocket;
+  CoolScript coolscript = new CoolScript();
 
   // Start is called before the first frame update
   async void Start()
@@ -18,6 +19,7 @@ public class Connection : MonoBehaviour
     websocket.OnOpen += () =>
     {
       Debug.Log("Connection open!");
+      Debug.Log(coolscript.verkeerJson);
     };
 
     websocket.OnError += (e) =>
@@ -38,7 +40,7 @@ public class Connection : MonoBehaviour
     };
 
     // Keep sending messages at every 0.3s
-    InvokeRepeating("SendWebSocketMessage", 0.0f, 2.0f);
+    InvokeRepeating("SendWebSocketMessage", 0.0f, 5.0f);
 
     await websocket.Connect();
   }
@@ -52,11 +54,8 @@ public class Connection : MonoBehaviour
   {
     if (websocket.State == WebSocketState.Open)
     {
-      // Sending bytes
-      await websocket.Send(new byte[] { 10, 20, 30 });
-
       // Sending plain text
-      await websocket.SendText("UwU");
+      await websocket.SendText(coolscript.verkeerJson);
     }
   }
 
