@@ -30,11 +30,12 @@
     const fileInput = document.getElementById("file");
     const sendImageButton = document.getElementById("sendImage");
 
-    const socket = new WebSocket("ws://localhost:8080/controller");
+    const socket = new WebSocket("ws://trafic.azurewebsites.net/controller");
     socket.binaryType = "arraybuffer";
 
     socket.onopen = function (event) {
         addMessageToWindow("Connected");
+        sendMessage("{\"A1\":0,\"A2\":0,\"A3\":0,\"A4\":0,\"AB1\":0,\"AB2\":0,\"B1\":0,\"B2\":0,\"B3\":0,\"B4\":0,\"B5\":0,\"BB1\":0,\"C1\":0,\"C2\":0,\"C3\":0,\"D1\":0,\"D2\":0,\"D3\":0,\"E1\":0,\"E2\":0,\"EV1\":0,\"EV2\":0,\"EV3\":0,\"EV4\":0,\"FF1\":0,\"FF2\":0,\"FV1\":0,\"FV2\":0,\"FV3\":0,\"FV4\":0,\"GF1\":0,\"GF2\":0,\"GV1\":0,\"GV2\":0,\"GV3\":0,\"GV4\":0}")
     };
 
     socket.onmessage = function (event) {
@@ -51,11 +52,6 @@
         messageInput.value = "";
     };
 
-    sendImageButton.onclick = function (event) {
-        let file = fileInput.files[0];
-        sendMessage(file);
-        fileInput.value = null;
-    };
 
     function sendMessage(message) {
         socket.send(message);
@@ -65,10 +61,4 @@
     function addMessageToWindow(message) {
         messageWindow.innerHTML += `<div>${message}</div>`
     }
-
-    function addImageToWindow(image) {
-        let url = URL.createObjectURL(new Blob([image]));
-        messageWindow.innerHTML += `<img src="${url}"/>`
-    }
 </script>
-</html>
