@@ -10,12 +10,15 @@ public class Connection : MonoBehaviour
 {
   WebSocket websocket;
   CoolScript coolscript = new CoolScript();
+  public static Stoplichten stoplichten = new Stoplichten();
 
-  // Start is called before the first frame update
+    // Start is called before the first frame update
   async void Start()
   {
     websocket = new WebSocket("ws://localhost:8080/controller");
     //websocket = new WebSocket("ws://trafic.azurewebsites.net/simulation");
+
+    
 
     websocket.OnOpen += () =>
     {
@@ -39,7 +42,7 @@ public class Connection : MonoBehaviour
         Debug.Log(bytes);
         string message = System.Text.Encoding.UTF8.GetString(bytes);
         Debug.Log("String message: " + message);
-        Stoplichten stoplichten = JsonConvert.DeserializeObject<Stoplichten>(message);
+        stoplichten = JsonConvert.DeserializeObject<Stoplichten>(message);
         Debug.Log("OnMessage! " + stoplichten.A1);
     };
 
