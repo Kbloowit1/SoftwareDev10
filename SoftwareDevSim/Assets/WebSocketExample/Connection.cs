@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Newtonsoft.Json;
 
 using NativeWebSocket;
 
@@ -34,9 +35,12 @@ public class Connection : MonoBehaviour
 
     websocket.OnMessage += (bytes) =>
     {
-      // Reading a plain text message
-      var message = System.Text.Encoding.UTF8.GetString(bytes);
-      Debug.Log("OnMessage! " + message);
+        // Reading a plain text message
+        Debug.Log(bytes);
+        string message = System.Text.Encoding.UTF8.GetString(bytes);
+        Debug.Log("String message: " + message);
+        Stoplichten stoplichten = JsonConvert.DeserializeObject<Stoplichten>(message);
+        Debug.Log("OnMessage! " + stoplichten.A1);
     };
 
     // Keep sending messages at every 0.3s

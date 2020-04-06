@@ -2,5 +2,4 @@ Serverside\Stoplichten.class
 Serverside\JsonDecoder.class
 Serverside\ControllerEndpoint.class
 Serverside\JsonEncoder.class
-Serverside\ControllerClient.class
 Controller\ControllerService.class
