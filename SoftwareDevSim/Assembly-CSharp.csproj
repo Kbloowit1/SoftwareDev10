@@ -59,6 +59,9 @@
      <Compile Include="Assets\Scripts\A2.cs" />
      <Compile Include="Assets\Scripts\A3.cs" />
      <Compile Include="Assets\Scripts\A4.cs" />
+     <Compile Include="Assets\Scripts\bus.cs" />
+     <Compile Include="Assets\Scripts\BusBehaviour.cs" />
+     <Compile Include="Assets\Scripts\deployObject.cs" />
      <Compile Include="Assets\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\WebSocketExample\Connection.cs" />
      <Compile Include="Assets\WebSocketExample\CoolScript.cs" />

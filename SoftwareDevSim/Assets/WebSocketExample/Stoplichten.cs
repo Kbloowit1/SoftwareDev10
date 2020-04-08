@@ -45,7 +45,7 @@ public class Stoplichten
     {
         this.A1 = "0";
         this.A2 = "0";
-        this.A3 = "0";
+        this.A3 = "2";
         this.A4 = "0";
         this.AB1 = "0";
         this.AB2 = "0";
