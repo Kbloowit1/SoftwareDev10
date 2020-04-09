@@ -2,6 +2,7 @@ package Serverside;
 
 
 import Controller.ControllerService;
+import Controller.StoplichtenSetter;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
@@ -14,6 +15,7 @@ public class ControllerEndpoint {
 
     private Session session;
     private ControllerService service = new ControllerService();
+    private StoplichtenSetter setter = new StoplichtenSetter();
 
 
     @OnOpen
@@ -37,6 +39,7 @@ public class ControllerEndpoint {
     @OnMessage
     public void onMessage(Session session, String message){
         System.out.println(message);
+        //setter.FindBusiestRoad(message);
 
         try{
             session.getBasicRemote().sendText(message);

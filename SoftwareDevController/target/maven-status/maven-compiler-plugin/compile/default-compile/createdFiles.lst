@@ -1,6 +1,8 @@
-Serverside\Stoplichten.class
 Serverside\JsonDecoder.class
 Serverside\ControllerEndpoint.class
 Serverside\JsonEncoder.class
-Serverside\ControllerClient.class
+Controller\Verkeer.class
+Controller\StoplichtenSetter.class
+Serverside\Stoplichten.class
+Controller\Heuristics.class
 Controller\ControllerService.class
