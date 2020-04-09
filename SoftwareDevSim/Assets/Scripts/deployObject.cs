@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class deployBus : MonoBehaviour
+public class deployObject : MonoBehaviour
 {
     public GameObject prefab;
     public float respawnTime = 1.0f;
