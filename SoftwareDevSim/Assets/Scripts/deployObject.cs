@@ -25,6 +25,11 @@ public class deployObject : MonoBehaviour
         {
             yield return new WaitForSeconds(respawnTime);
             spawnObject();
+            bus.stoplicht_start = bus.stoplicht_start - 0.07f;
+            if(bus.stoplicht_start <= 0.10f)
+            {
+                Connection.stoplichten.BB1 = "2";
+            }
         }
     }
 }
