@@ -1,18 +1,19 @@
 package Serverside;
 
+import Controller.Verkeer;
 import com.google.gson.Gson;
 
 import javax.websocket.DecodeException;
 import javax.websocket.Decoder;
 import javax.websocket.EndpointConfig;
 
-public class JsonDecoder implements Decoder.Text<Stoplichten> {
+public class JsonDecoder implements Decoder.Text<Verkeer> {
 
     Gson gson = new Gson();
 
     @Override
-    public Stoplichten decode(String s) throws DecodeException {
-        return gson.fromJson(s, Stoplichten.class);
+    public Verkeer decode(String s) throws DecodeException {
+        return gson.fromJson(s, Verkeer.class);
     }
 
     @Override
