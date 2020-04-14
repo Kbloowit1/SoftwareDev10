@@ -1,5 +1,6 @@
 package Controller;
 
+import Serverside.Stoplichten;
 import org.graalvm.compiler.core.LIRGenerationPhase;
 
 import java.util.HashMap;
@@ -50,6 +51,485 @@ public class Heuristics {
         lightmap.put("GV4", new String[]{"B2", "B3", "C1", "D3"});
 
     }
+
+    public Stoplichten algo(HashMap<String, Integer> verkeermap){
+        Stoplichten stoplichten = new Stoplichten();
+
+        for(String i : verkeermap.keySet())
+        {
+            switch (i){
+
+                case "A1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getA1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setA1(2);
+                        }
+                    }
+                }
+                case "A2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getA2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setA2(2);
+                        }
+                    }
+                }
+                case "A3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getA3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setA3(2);
+                        }
+                    }
+                }
+                case "A4":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getA4() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setA4(2);
+                        }
+                    }
+                }
+                case "AB1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getAB1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setAB1(2);
+                        }
+                    }
+                }
+                case "AB2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getAB2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setAB2(2);
+                        }
+                    }
+                }
+                case "B1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getB1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setB1(2);
+                        }
+                    }
+                }
+                case "B2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getB2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setB2(2);
+                        }
+                    }
+                }
+                case "B3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getB3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setB3(2);
+                        }
+                    }
+                }
+                case "B4":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getB4() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setB4(2);
+                        }
+                    }
+                }
+                case "B5":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getB5() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setB5(2);
+                        }
+                    }
+                }
+                case "BB1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getBB1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setBB1(2);
+                        }
+                    }
+                }
+                case "C1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getC1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setC1(2);
+                        }
+                    }
+                }
+                case "C2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getC2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setC2(2);
+                        }
+                    }
+                }
+                case "C3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getC3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setC3(2);
+                        }
+                    }
+                }
+                case "D1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getD1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setD1(2);
+                        }
+                    }
+                }
+                case "D2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getD2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setD2(2);
+                        }
+                    }
+                }
+                case "D3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getD3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setD3(2);
+                        }
+                    }
+                }
+                case "E1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getE1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setE1(2);
+                        }
+                    }
+                }
+                case "EV1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getEV1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setEV1(2);
+                        }
+                    }
+                }
+                case "EV2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getEV2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setEV2(2);
+                        }
+                    }
+                }
+                case "EV3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getEV3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setEV3(2);
+                        }
+                    }
+                }
+                case "EV4":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getEV4() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setEV4(2);
+                        }
+                    }
+                }
+                case "FF1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getFF1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setFF1(2);
+                        }
+                    }
+                }
+                case "FF2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getFF2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setFF2(2);
+                        }
+                    }
+                }
+                case "FV1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getFV1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setFV1(2);
+                        }
+                    }
+                }
+                case "FV2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getFV2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setFV2(2);
+                        }
+                    }
+                }
+                case "FV3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getFV3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setFV3(2);
+                        }
+                    }
+                }
+                case "FV4":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getFV4() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setFV4(2);
+                        }
+                    }
+                }
+                case "GF1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getGF1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setGF1(2);
+                        }
+                    }
+                }
+                case "GF2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getGF2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setGF2(2);
+                        }
+                    }
+                }
+                case "GV1":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getGV1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setGV1(2);
+                        }
+                    }
+                }
+                case "GV2":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getGV2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setGV2(2);
+                        }
+                    }
+                }
+                case "GV3":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getGV3() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setGV3(2);
+                        }
+                    }
+                }
+                case "GV4":
+                {
+                    if (verkeermap.get(i) > 0 || stoplichten.getGV4() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setGV4(2);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        return stoplichten;
+    }
+
+    public boolean checkconflictzones(String[] conflictzones, Stoplichten stoplichten){
+        for (String i : conflictzones)
+        {
+            switch (i){
+                case "A1":
+                {
+                    if(stoplichten.getA1() != 0)
+                        return false;
+                }
+                case "A2":
+                {
+                    if(stoplichten.getA2() != 0)
+                        return false;
+                }
+                case "A3":
+                {
+                    if(stoplichten.getA3() != 0)
+                        return false;
+                }
+                case "A4":
+                {
+                    if(stoplichten.getA4() != 0)
+                        return false;
+                }
+                case "AB1":
+                {
+                    if(stoplichten.getAB1() != 0)
+                        return false;
+                }
+                case "AB2":
+                {
+                    if(stoplichten.getAB2() != 0)
+                        return false;
+                }
+                case "B1":
+                {
+                    if(stoplichten.getB1() != 0)
+                        return false;
+                }
+                case "B2":
+                {
+                    if(stoplichten.getB2() != 0)
+                        return false;
+                }
+                case "B3":
+                {
+                    if(stoplichten.getB3() != 0)
+                        return false;
+                }
+                case "B4":
+                {
+                    if(stoplichten.getB4() != 0)
+                        return false;
+                }
+                case "B5":
+                {
+                    if(stoplichten.getB5() != 0)
+                        return false;
+                }
+                case "BB1":
+                {
+                    if(stoplichten.getBB1() != 0)
+                        return false;
+                }
+                case "C1":
+                {
+                    if(stoplichten.getC1() != 0)
+                        return false;
+                }
+                case "C2":
+                {
+                    if(stoplichten.getC2() != 0)
+                        return false;
+                }
+                case "C3":
+                {
+                    if(stoplichten.getC3() != 0)
+                        return false;
+                }
+                case "D1":
+                {
+                    if(stoplichten.getD1() != 0)
+                        return false;
+                }
+                case "D2":
+                {
+                    if(stoplichten.getD2() != 0)
+                        return false;
+                }
+                case "D3":
+                {
+                    if(stoplichten.getD3() != 0)
+                        return false;
+                }
+                case "E1":
+                {
+                    if(stoplichten.getE1() != 0)
+                        return false;
+                }
+                case "EV1":
+                {
+                    if(stoplichten.getEV1() != 0)
+                        return false;
+                }
+                case "EV2":
+                {
+                    if(stoplichten.getEV2() != 0)
+                        return false;
+                }
+                case "EV3":
+                {
+                    if(stoplichten.getEV3() != 0)
+                        return false;
+                }
+                case "EV4":
+                {
+                    if(stoplichten.getEV4() != 0)
+                        return false;
+                }
+                case "FF1":
+                {
+                    if(stoplichten.getFF1() != 0)
+                        return false;
+                }
+                case "FF2":
+                {
+                    if(stoplichten.getFF2() != 0)
+                        return false;
+                }
+                case "FV1":
+                {
+                    if(stoplichten.getFV1() != 0)
+                        return false;
+                }
+                case "FV2":
+                {
+                    if(stoplichten.getFV2() != 0)
+                        return false;
+                }
+                case "FV3":
+                {
+                    if(stoplichten.getFV3() != 0)
+                        return false;
+                }
+                case "FV4":
+                {
+                    if(stoplichten.getFV4() != 0)
+                        return false;
+                }
+                case "GF1":
+                {
+                    if(stoplichten.getGF1() != 0)
+                        return false;
+                }
+                case "GF2":
+                {
+                    if(stoplichten.getGF2() != 0)
+                        return false;
+                }
+                case "GV1":
+                {
+                    if(stoplichten.getGV1() != 0)
+                        return false;
+                }
+                case "GV2":
+                {
+                    if(stoplichten.getGV2() != 0)
+                        return false;
+                }
+                case "GV3":
+                {
+                    if(stoplichten.getGV3() != 0)
+                        return false;
+                }
+                case "GV4":
+                {
+                    if(stoplichten.getGV4() != 0)
+                        return false;
+                }
+            }
+        }
+        return true;
+    }
+
 
 
 
