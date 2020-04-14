@@ -4,27 +4,38 @@ using UnityEngine;
 
 public class deployObject : MonoBehaviour
 {
-    public GameObject prefab;
-    public float respawnTime = 1.0f;
+    public GameObject BB1prefab;
+    public GameObject AB1prefab;
+    public float respawnTime = 8.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(busCall());
+        StartCoroutine(BB1Call());
+        StartCoroutine(AB1Call());
     }
 
-    private void spawnObject()
+    private void spawnObject(GameObject objectToSpawn)
     {
-        GameObject a = Instantiate(prefab) as GameObject;
-        a.transform.position = new Vector3(880, 376, -11);
+        GameObject spawnObject = Instantiate(objectToSpawn) as GameObject;
     }
 
-    IEnumerator busCall()
+    IEnumerator BB1Call()
     {
         while (true)
         {
             yield return new WaitForSeconds(respawnTime);
-            spawnObject();
+            spawnObject(BB1prefab);
+            BB1Behaviour.stoplicht_start = BB1Behaviour.stoplicht_start - 0.055f;
+        }
+    }
+    IEnumerator AB1Call()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(respawnTime);
+            spawnObject(AB1prefab);
+            AB1Behaviour.stoplicht_start = AB1Behaviour.stoplicht_start - 0.045f;
         }
     }
 }
