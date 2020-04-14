@@ -16,7 +16,7 @@ public class Connection : MonoBehaviour
     // Start is called before the first frame update
   async void Start()
   {
-    websocket = new WebSocket("ws://localhost:8080/controller");
+        websocket = new WebSocket("ws://localhost:8080/controller");
         //websocket = new WebSocket("ws://trafic.azurewebsites.net/simulation");
 
         GameObject go = new GameObject("Test");
