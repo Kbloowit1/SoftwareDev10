@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4462482438370503310
+--- !u!1 &3636900492785829119
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 355545622520413989}
-  - component: {fileID: 8645859172239300462}
+  - component: {fileID: 6953318441763632449}
+  - component: {fileID: 2855255333333403945}
   m_Layer: 0
   m_Name: A3Path
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &355545622520413989
+--- !u!4 &6953318441763632449
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4462482438370503310}
+  m_GameObject: {fileID: 3636900492785829119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 669.43787, y: 313.06458, z: -3066.6562}
+  m_LocalPosition: {x: 679.4, y: 345.6, z: -3066.6562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8645859172239300462
+--- !u!114 &2855255333333403945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4462482438370503310}
+  m_GameObject: {fileID: 3636900492785829119}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
@@ -46,8 +46,8 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: 295.47235, y: 61.98694, z: 0.03125}
-      - {x: 340.7495, y: 62.020844, z: 0.03125}
+      - {x: 406.81262, y: 61.98694, z: 0.03125}
+      - {x: 452.08972, y: 62.020844, z: 0.03125}
       - {x: -872.45764, y: 58.74887, z: 0.03125}
       - {x: -806.9359, y: 58.782806, z: 0.03125}
       isClosed: 0

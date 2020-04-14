@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7076028454351204023
+--- !u!1 &9207264834354724726
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6571262707302988572}
-  - component: {fileID: 2892073325557093207}
+  - component: {fileID: 6377726998851108686}
+  - component: {fileID: 8776290452995434219}
   m_Layer: 0
   m_Name: B3Path
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6571262707302988572
+--- !u!4 &6377726998851108686
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7076028454351204023}
+  m_GameObject: {fileID: 9207264834354724726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 669.43787, y: 313.06458, z: -3066.6562}
+  m_LocalPosition: {x: 671.2, y: 322.1, z: -3066.6562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2892073325557093207
+--- !u!114 &8776290452995434219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7076028454351204023}
+  m_GameObject: {fileID: 9207264834354724726}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
@@ -46,10 +46,10 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -672.1623, y: -13.314667, z: 0.03125}
-      - {x: -530.36053, y: -12.94873, z: 0.03125}
-      - {x: 179.14496, y: -10.43634, z: 0.03125}
-      - {x: 288.8407, y: -10.866425, z: 0.03125}
+      - {x: -856.50836, y: -13.314697, z: 0.03125}
+      - {x: -714.7066, y: -12.948761, z: 0.03125}
+      - {x: 263.18506, y: -11.339996, z: 0.03125}
+      - {x: 372.8808, y: -11.770081, z: 0.03125}
       isClosed: 0
       space: 0
       controlMode: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4206355977603649957
+--- !u!1 &1805068689805031041
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 242403315542918158}
-  - component: {fileID: 8092499347552758853}
+  - component: {fileID: 2859246884458592023}
+  - component: {fileID: 547877789875760062}
   m_Layer: 0
   m_Name: A4Path
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &242403315542918158
+--- !u!4 &2859246884458592023
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4206355977603649957}
+  m_GameObject: {fileID: 1805068689805031041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 669.43787, y: 313.06458, z: -3066.6562}
+  m_LocalPosition: {x: 688.4, y: 350.1, z: -3066.6562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8092499347552758853
+--- !u!114 &547877789875760062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4206355977603649957}
+  m_GameObject: {fileID: 1805068689805031041}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
@@ -46,16 +46,16 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: 330.9926, y: 76.40576, z: 0.03125}
-      - {x: 354.3824, y: 76.42258, z: 0.03125}
+      - {x: 395.5714, y: 76.3595, z: 0.03125}
+      - {x: 418.96057, y: 76.37631, z: 0.03125}
       - {x: 121.35974, y: 76.67679, z: 0.03125}
       - {x: -7.088684, y: 76.877075, z: 0.03125}
       - {x: -67.17828, y: 76.97077, z: 0.03125}
       - {x: -123.37468, y: 117.42084, z: 0.03125}
       - {x: -123.32324, y: 141.05856, z: 0.03125}
-      - {x: -123.266174, y: 167.2826, z: 0.03125}
-      - {x: -122.588806, y: 179.04425, z: 0.03125}
-      - {x: -122.35278, y: 229.55542, z: 0.03125}
+      - {x: -123.266174, y: 167.28256, z: 0.03125}
+      - {x: -122.588806, y: 179.04446, z: 0.03125}
+      - {x: -122.35278, y: 229.55563, z: 0.03125}
       isClosed: 0
       space: 0
       controlMode: 0
