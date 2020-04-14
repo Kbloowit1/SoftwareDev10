@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8612257733895337950}
   - component: {fileID: 7452257362261735009}
   m_Layer: 0
-  m_Name: Path
+  m_Name: BB1Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,8 +54,8 @@ MonoBehaviour:
       - {x: 233.39594, y: -4.1331058, z: 0}
       - {x: 316.05304, y: -3.6678772, z: 0}
       - {x: 410.58118, y: -3.1358337, z: 0}
-      - {x: 500.169, y: -3.4354248, z: 0}
-      - {x: 538.6353, y: -3.3957214, z: 0}
+      - {x: 602.4842, y: -3.4354248, z: 0}
+      - {x: 640.9505, y: -3.3957214, z: 0}
       isClosed: 0
       space: 0
       controlMode: 0
