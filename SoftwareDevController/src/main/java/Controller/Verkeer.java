@@ -1,5 +1,7 @@
 package Controller;
 
+import java.util.HashMap;
+
 public class Verkeer {
     private int A1;
     private int A2;
@@ -324,6 +326,47 @@ public class Verkeer {
 
     public void setGV4(int GV4) {
         this.GV4 = GV4;
+    }
+
+    public HashMap<String, Integer> getMap(){
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("A1", getA1());
+        map.put("A2", getA2());
+        map.put("A3", getA3());
+        map.put("A4", getA4());
+        map.put("AB1", getAB1());
+        map.put("AB2", getAB2());
+        map.put("B1", getB1());
+        map.put("B2", getB2());
+        map.put("B3", getB3());
+        map.put("B4", getB4());
+        map.put("B5", getB5());
+        map.put("BB1", getBB1());
+        map.put("C1", getC1());
+        map.put("C2", getC2());
+        map.put("C3", getC3());
+        map.put("D1", getD1());
+        map.put("D2", getD2());
+        map.put("D3", getD3());
+        map.put("E1", getE1());
+        map.put("EV1", getEV1());
+        map.put("EV2", getEV2());
+        map.put("EV3", getEV3());
+        map.put("EV4", getEV4());
+        map.put("FF1", getFF1());
+        map.put("FF2", getFF2());
+        map.put("FV1", getFV1());
+        map.put("FV2", getFV2());
+        map.put("FV3", getFV3());
+        map.put("FV4", getFV4());
+        map.put("GF1", getGF1());
+        map.put("GF2", getGF2());
+        map.put("GV1", getGV1());
+        map.put("GV2", getGV2());
+        map.put("GV3", getGV3());
+        map.put("GV4", getGV4());
+
+        return map;
     }
 }
 // TODO Abstract class?
