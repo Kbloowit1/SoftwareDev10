@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7107288170843692702
+--- !u!1 &8856684638749273704
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6602525617369991989}
-  - component: {fileID: 2932837114525983614}
+  - component: {fileID: 8816529351196788293}
+  - component: {fileID: 1235234191998004945}
   m_Layer: 0
   m_Name: C1Path
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6602525617369991989
+--- !u!4 &8816529351196788293
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7107288170843692702}
+  m_GameObject: {fileID: 8856684638749273704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 669.43787, y: 313.06458, z: -3066.6562}
+  m_LocalPosition: {x: 676.7, y: 322.1, z: -3066.6562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2932837114525983614
+--- !u!114 &1235234191998004945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7107288170843692702}
+  m_GameObject: {fileID: 8856684638749273704}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
@@ -46,19 +46,19 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -162.4321, y: 259.4082, z: 0.03125}
-      - {x: -162.48886, y: 239.06702, z: 0.03125}
-      - {x: -162.82971, y: 147.55133, z: 0.2043457}
+      - {x: -162.43207, y: 292.8436, z: 0.03125}
+      - {x: -162.48883, y: 272.5024, z: 0.03125}
+      - {x: -162.82977, y: 147.55133, z: 0.2043457}
       - {x: -162.73157, y: 70.05344, z: 0.03125}
-      - {x: -162.69614, y: 42.07541, z: -0.03124043}
+      - {x: -162.6961, y: 42.07541, z: -0.03124043}
       - {x: -153.90881, y: 23.329193, z: 0.03125}
       - {x: -138.29749, y: 10.741028, z: 0.03125}
       - {x: -115.40027, y: -7.7220993, z: 0.03125}
       - {x: -78.75689, y: -11.785953, z: 0.03125}
       - {x: -50.601807, y: -11.749878, z: 0.03125}
       - {x: -1.1082764, y: -11.686462, z: 0.03125}
-      - {x: 332.4889, y: -11.333679, z: 0.03125}
-      - {x: 359.10754, y: -11.319855, z: 0.03125}
+      - {x: 346.04376, y: -10.429993, z: 0.03125}
+      - {x: 372.6624, y: -10.416168, z: 0.03125}
       isClosed: 0
       space: 0
       controlMode: 0

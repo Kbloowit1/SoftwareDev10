@@ -9,8 +9,8 @@ public class BB1Behaviour : MonoBehaviour
     public float speed = 70;
     float distanceTravelled;
     public EndOfPathInstruction end = EndOfPathInstruction.Stop;
-    public static float stoplicht_end = 0.45f;
-    public static float stoplicht_start = 0.4f;
+    public static float stoplicht_end = 0.43f;
+    public static float stoplicht_start = 0.38f;
     public static float path_despawn_start = 0.97f;
     public static float path_despawn_end = 0.99f;
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &924017082240345779
+--- !u!1 &4569850538121499095
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3877615060116058904}
-  - component: {fileID: 5099037514049149779}
+  - component: {fileID: 9189819185722004390}
+  - component: {fileID: 8538686982757082915}
   m_Layer: 0
   m_Name: FV3_FV4Path
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3877615060116058904
+--- !u!4 &9189819185722004390
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924017082240345779}
+  m_GameObject: {fileID: 4569850538121499095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 669.43787, y: 313.06458, z: -3066.6562}
+  m_LocalPosition: {x: 641.4, y: 300.4, z: -3066.6562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5099037514049149779
+--- !u!114 &8538686982757082915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924017082240345779}
+  m_GameObject: {fileID: 4569850538121499095}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
@@ -46,16 +46,16 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -618.9087, y: -65.84331, z: 0.03125}
-      - {x: -673.2414, y: -65.9126, z: 0.03125}
-      - {x: -482.5092, y: -66.376205, z: 0.03125}
-      - {x: -324.16406, y: -66.510056, z: 0.03125}
-      - {x: -291.6606, y: -66.53753, z: 0.03125}
+      - {x: -712.88904, y: -62.228683, z: 0.03125}
+      - {x: -620.8292, y: -62.297974, z: 0.03125}
+      - {x: -486.12378, y: -60.954254, z: 0.03125}
+      - {x: -327.77866, y: -61.088104, z: 0.03125}
+      - {x: -295.2752, y: -61.115578, z: 0.03125}
       - {x: -266.0414, y: -80.531136, z: 0.03125}
       - {x: -234.22296, y: -80.54895, z: 0.03125}
       - {x: -183.55014, y: -80.57732, z: 0.03125}
-      - {x: 187.93036, y: -80.14885, z: 0.03125}
-      - {x: 230.96759, y: -80.54324, z: 0.03125}
+      - {x: 306.3095, y: -81.052475, z: 0.03125}
+      - {x: 349.34674, y: -81.44687, z: 0.03125}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 90
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
