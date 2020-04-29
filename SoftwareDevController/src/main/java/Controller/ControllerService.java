@@ -24,7 +24,6 @@ public class ControllerService {
         stoplicht.setD2(0);
         stoplicht.setD3(0);
         stoplicht.setE1(0);
-        stoplicht.setE2(0);
         stoplicht.setEV1(0);
         stoplicht.setEV2(0);
         stoplicht.setEV3(0);

@@ -1,11 +1,9 @@
 Serverside\JsonDecoder.class
 Serverside\ControllerEndpoint.class
 Serverside\JsonEncoder.class
-<<<<<<< HEAD
 Controller\Verkeer.class
 Controller\StoplichtenSetter.class
 Serverside\Stoplichten.class
 Controller\Heuristics.class
-=======
->>>>>>> e8a880a30f632906a92c59ab10d95a6787e39d1e
+Serverside\ControllerEndpoint$1.class
 Controller\ControllerService.class
