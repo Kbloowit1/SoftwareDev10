@@ -70,6 +70,13 @@ public class ControllerEndpoint {
                 }
             };
             timer.schedule(orange, 4000);
+            synchronized (orange){
+                try{
+                    orange.wait();
+                }catch (InterruptedException e){
+                    System.out.println("OOps");
+                }
+            }
 
             TimerTask red = new TimerTask() {
                 @Override
@@ -85,6 +92,30 @@ public class ControllerEndpoint {
             };
 
             timer.schedule(red, 3500);
+            synchronized (red){
+                try{
+                    red.wait();
+                }catch (InterruptedException e){
+                    System.out.println("OOps");
+                }
+            }
+
+
+            TimerTask waitforred = new TimerTask() {
+                @Override
+                public void run() {
+
+                }
+            };
+
+            timer.schedule(waitforred, 2000);
+            synchronized (waitforred){
+                try{
+                    waitforred.wait();
+                }catch (InterruptedException e){
+                    System.out.println("OOps");
+                }
+            }
 
             working = false;
 

@@ -2,8 +2,10 @@ Serverside\JsonDecoder.class
 Serverside\ControllerEndpoint.class
 Serverside\JsonEncoder.class
 Controller\Verkeer.class
+Serverside\ControllerEndpoint$2.class
 Controller\StoplichtenSetter.class
 Serverside\Stoplichten.class
 Controller\Heuristics.class
 Serverside\ControllerEndpoint$1.class
+Serverside\ControllerEndpoint$3.class
 Controller\ControllerService.class
