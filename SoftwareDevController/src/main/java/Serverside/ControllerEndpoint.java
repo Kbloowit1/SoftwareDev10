@@ -69,19 +69,15 @@ public class ControllerEndpoint {
 
                 }
             };
-            timer.schedule(orange, 4000);
-            synchronized (orange){
-                try{
-                    orange.wait();
-                }catch (InterruptedException e){
-                    System.out.println("OOps");
-                }
-            }
+            //timer.schedule(orange, 4000);
+
+
 
             TimerTask red = new TimerTask() {
                 @Override
                 public void run() {
                     try {
+                        System.out.println("Do i get here");
                         session.getBasicRemote().sendObject(setter.SetRed(status));
                     } catch (IOException | EncodeException  e) {
                        System.out.println("Red fail");
@@ -91,14 +87,7 @@ public class ControllerEndpoint {
                 }
             };
 
-            timer.schedule(red, 3500);
-            synchronized (red){
-                try{
-                    red.wait();
-                }catch (InterruptedException e){
-                    System.out.println("OOps");
-                }
-            }
+           // timer.schedule(red, 3500);
 
 
             TimerTask waitforred = new TimerTask() {
@@ -108,14 +97,12 @@ public class ControllerEndpoint {
                 }
             };
 
-            timer.schedule(waitforred, 2000);
-            synchronized (waitforred){
-                try{
-                    waitforred.wait();
-                }catch (InterruptedException e){
-                    System.out.println("OOps");
-                }
-            }
+            //timer.schedule(waitforred, 2000);
+
+            System.out.println("???");
+            timer.schedule(orange, 5000);
+            timer.schedule(red, 8500);
+            timer.schedule(waitforred, 10500);
 
             working = false;
 
