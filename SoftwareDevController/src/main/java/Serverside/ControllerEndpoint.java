@@ -93,7 +93,7 @@ public class ControllerEndpoint {
             TimerTask waitforred = new TimerTask() {
                 @Override
                 public void run() {
-
+                    working = false;
                 }
             };
 
@@ -104,7 +104,8 @@ public class ControllerEndpoint {
             timer.schedule(red, 8500);
             timer.schedule(waitforred, 10500);
 
-            working = false;
+
+
 
         }
         else{
