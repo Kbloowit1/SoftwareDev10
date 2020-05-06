@@ -89,9 +89,9 @@ public class ControllerEndpoint {
                 }
             };
 
-            timer.schedule(orange, 5000);
-            timer.schedule(red, 8500);
-            timer.schedule(waitforred, 10500);
+            timer.schedule(orange, 8000);
+            timer.schedule(red, 11500);
+            timer.schedule(waitforred, 13500);
         }
         else{
             System.out.println("its working");

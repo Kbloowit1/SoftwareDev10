@@ -1,12 +1,8 @@
 package Controller;
 
 import Serverside.Stoplichten;
-import org.graalvm.compiler.core.LIRGenerationPhase;
-
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.List;
+
 
 public class Heuristics {
     // Lightmap, heeft het stoplicht om op groen te zetten als key en alles wat dan op rood moet als values
