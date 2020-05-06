@@ -52,8 +52,6 @@ public class ControllerEndpoint {
                  working = false;
             }
 
-
-
             Timer timer = new Timer();
             TimerTask orange = new TimerTask(){
                 public void run(){
@@ -66,10 +64,8 @@ public class ControllerEndpoint {
                         System.out.println("Orange Fail");
                         working = false;
                     }
-
                 }
             };
-            //timer.schedule(orange, 4000);
 
 
 
@@ -83,12 +79,8 @@ public class ControllerEndpoint {
                        System.out.println("Red fail");
                        working = false;
                     }
-
                 }
             };
-
-           // timer.schedule(red, 3500);
-
 
             TimerTask waitforred = new TimerTask() {
                 @Override
@@ -97,16 +89,9 @@ public class ControllerEndpoint {
                 }
             };
 
-            //timer.schedule(waitforred, 2000);
-
-            System.out.println("???");
             timer.schedule(orange, 5000);
             timer.schedule(red, 8500);
             timer.schedule(waitforred, 10500);
-
-
-
-
         }
         else{
             System.out.println("its working");
