@@ -23,7 +23,7 @@ public class Heuristics {
         lightmap.put("B1", new String[] {"A2", "A3", "A4", "C1", "C2", "C3", "D1", "D2", "E1", "EV1", "EV2", "EV3", "EV4"});
         lightmap.put("B2", new String[]{"A1", "C1", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4"});
         lightmap.put("B3", new String[]{"A1", "C1", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4"});
-        lightmap.put("B4", new String[]{"A1", "B5", "BB1", "C2", "E1", "EV1", "EV2", "EV3", "FF1", "FF2", "FV4"});
+        lightmap.put("B4", new String[]{"A1", "B5", "BB1", "C2", "E1", "EV1", "EV2", "EV3", "FF1", "FF2","FV2","FV4"});
         lightmap.put("B5", new String[]{"A1", "B4", "C2"});
         lightmap.put("BB1", new String[]{"A1", "B4", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4" });
         lightmap.put("C1", new String[]{"A1", "A2", "A3", "B1", "B2", "B3", "D1", "D2", "D3", "GF1", "GF2", "GV2", "GV4"});
