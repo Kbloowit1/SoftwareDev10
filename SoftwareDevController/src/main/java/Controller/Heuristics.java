@@ -15,7 +15,7 @@ public class Heuristics {
         lightmap.put("A3", new String[]{"B1","C1","C2", "C3", "D1", "D2", "E1", "EV2", "EV4", "GF1", "GF2", "GV1", "GV3"});
         lightmap.put("A4", new String[]{"AB1", "AB2", "B1", "D2", "GF1", "GF2"});
         lightmap.put("AB1", new String[]{"A2","A3","A4", "B1", "C1", "C2", "C3", "D1", "D2", "EV2", "EV4", "GF1", "GF2", "GV1", "GV3"});
-        lightmap.put("AB2", new String[]{"A4","AB1", "B1", "D2", "GF1", "GF2"});
+        lightmap.put("AB2", new String[]{"A4","AB1", "B1", "D2", "GF1", "GF2", "GV1", "GV3"});
         lightmap.put("B1", new String[] {"A2", "A3", "A4", "C1", "C2", "C3", "D1", "D2", "E1", "EV1", "EV2", "EV3", "EV4"});
         lightmap.put("B2", new String[]{"A1", "C1", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4"});
         lightmap.put("B3", new String[]{"A1", "C1", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4"});
