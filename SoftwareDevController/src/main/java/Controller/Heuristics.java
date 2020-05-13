@@ -52,9 +52,12 @@ public class Heuristics {
     public Stoplichten algo(HashMap<String, Integer> verkeermap){
         Stoplichten stoplichten = new Stoplichten();
 
+        BusPrioriteit(verkeermap, stoplichten);
+
+
         for(String i : verkeermap.keySet())
         {
-
+            System.out.print(i);
             switch (i){
                 case "A1":
                 {
@@ -91,24 +94,6 @@ public class Heuristics {
                     if (verkeermap.get(i) > 0 && stoplichten.getA4() == 0) {
                         if (checkconflictzones(lightmap.get(i), stoplichten)) {
                             stoplichten.setA4(2);
-                        }
-                    }
-                    break;
-                }
-                case "AB1":
-                {
-                    if (verkeermap.get(i) > 0 && stoplichten.getAB1() == 0) {
-                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
-                            stoplichten.setAB1(2);
-                        }
-                    }
-                    break;
-                }
-                case "AB2":
-                {
-                    if (verkeermap.get(i) > 0 && stoplichten.getAB2() == 0) {
-                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
-                            stoplichten.setAB2(2);
                         }
                     }
                     break;
@@ -154,15 +139,6 @@ public class Heuristics {
                     if (verkeermap.get(i) > 0 && stoplichten.getB5() == 0) {
                         if (checkconflictzones(lightmap.get(i), stoplichten)) {
                             stoplichten.setB5(2);
-                        }
-                    }
-                    break;
-                }
-                case "BB1":
-                {
-                    if (verkeermap.get(i) > 0 && stoplichten.getBB1() == 0) {
-                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
-                            stoplichten.setBB1(2);
                         }
                     }
                     break;
@@ -600,15 +576,41 @@ public class Heuristics {
 
       return true;
     }
-
-
-
-
-
-
-
-
-
-
+    public void BusPrioriteit(HashMap<String, Integer> verkeermap, Stoplichten stoplichten)
+    {
+        for(String i : verkeermap.keySet())
+        {
+            switch(i)
+            {
+                case "AB1":
+                {
+                    if (verkeermap.get(i) > 0 && stoplichten.getAB1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setAB1(2);
+                        }
+                    }
+                    break;
+                }
+                case "AB2":
+                {
+                    if (verkeermap.get(i) > 0 && stoplichten.getAB2() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setAB2(2);
+                        }
+                    }
+                    break;
+                }
+                case "BB1":
+                {
+                    if (verkeermap.get(i) > 0 && stoplichten.getBB1() == 0) {
+                        if (checkconflictzones(lightmap.get(i), stoplichten)) {
+                            stoplichten.setBB1(2);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+    }
 
 }

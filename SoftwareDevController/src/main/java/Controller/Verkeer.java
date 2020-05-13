@@ -1,6 +1,7 @@
 package Controller;
 
-import java.util.HashMap;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Verkeer {
     private int A1;
@@ -366,7 +367,25 @@ public class Verkeer {
         map.put("GV3", getGV3());
         map.put("GV4", getGV4());
 
-        return map;
+
+        return sortMapByValue(map);
+
+
     }
+
+
+    public HashMap<String, Integer> sortMapByValue(HashMap<String,Integer> map)
+    {
+        List<Map.Entry<String, Integer>> list = new LinkedList<Map.Entry<String, Integer>>(map.entrySet());
+
+        list.sort((o1, o2) -> o1.getValue().compareTo(o2.getValue()) == 0
+                ? o1.getKey().compareTo(o2.getKey())
+                : o1.getValue().compareTo(o2.getValue()));
+        return list.stream().collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> b, LinkedHashMap::new));
+
+
+
+    }
+
 }
 // TODO Abstract class?

@@ -26,9 +26,6 @@ public class ControllerEndpoint {
     private Session session;
     private ControllerService controllerService = new ControllerService();
     private StoplichtenSetter setter = new StoplichtenSetter();
-    private Verkeer verkeer = new Verkeer();
-    private final int Max_groentijdseconden = 10;
-    private final ReentrantLock loser = new ReentrantLock();
     private boolean working = false;
     private Stoplichten status;
 

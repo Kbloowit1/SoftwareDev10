@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\JsonEncoder.java
 C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Controller\ControllerService.java
-C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\ControllerClient.java
+C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Controller\StoplichtenSetter.java
+C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Controller\Heuristics.java
 C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\Stoplichten.java
+C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Controller\Verkeer.java
 C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Main.java
 C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\JsonDecoder.java
 C:\Users\Ikke\source\repos\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\ControllerEndpoint.java
-=======
-C:\Users\demis\Documents\School\Minor\Software Development\SDM\SoftwareDev10\SoftwareDevController\src\main\java\Main.java
-C:\Users\demis\Documents\School\Minor\Software Development\SDM\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\ControllerEndpoint.java
-C:\Users\demis\Documents\School\Minor\Software Development\SDM\SoftwareDev10\SoftwareDevController\src\main\java\Serverside\Stoplichten.java
->>>>>>> 0881b6c9022c8918b13895ccc4c098a335b39375
