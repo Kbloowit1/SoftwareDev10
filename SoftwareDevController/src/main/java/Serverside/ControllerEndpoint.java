@@ -88,17 +88,15 @@ public class ControllerEndpoint {
 
             timer.schedule(orange, 8000);
             timer.schedule(red, 11500);
-            timer.schedule(waitforred, 13500);
+            timer.schedule(waitforred, 17500);
         }
         else{
             System.out.println("its working");
         }
-        //TODO: Oude code op deze manier implementeren, dan werkt die kutzooi eindelijk
 
-
-
-        
     }
+
+
 
 
 }
