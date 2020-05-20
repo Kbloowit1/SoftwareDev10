@@ -52,7 +52,7 @@ public class Heuristics {
     public Stoplichten algo(HashMap<String, Integer> verkeermap){
         Stoplichten stoplichten = new Stoplichten();
 
-        BusPrioriteit(verkeermap, stoplichten);
+        stoplichten = BusPrioriteit(verkeermap, stoplichten);
 
 
         for(String i : verkeermap.keySet())
@@ -576,7 +576,7 @@ public class Heuristics {
 
       return true;
     }
-    public void BusPrioriteit(HashMap<String, Integer> verkeermap, Stoplichten stoplichten)
+    public Stoplichten BusPrioriteit(HashMap<String, Integer> verkeermap, Stoplichten stoplichten)
     {
         for(String i : verkeermap.keySet())
         {
@@ -611,6 +611,7 @@ public class Heuristics {
                 }
             }
         }
+        return stoplichten;
     }
 
 }
