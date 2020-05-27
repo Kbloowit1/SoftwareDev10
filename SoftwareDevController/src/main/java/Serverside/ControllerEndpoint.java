@@ -1,22 +1,16 @@
 package Serverside;
 
 
-import Controller.ControllerService;
 import Controller.StoplichtenSetter;
 import Controller.Verkeer;
 
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.locks.ReentrantLock;
+
 
 @ServerEndpoint(value="/controller",
 encoders = JsonEncoder.class,
@@ -24,7 +18,6 @@ decoders = JsonDecoder.class)
 public class ControllerEndpoint {
 
     private Session session;
-    private ControllerService controllerService = new ControllerService();
     private StoplichtenSetter setter = new StoplichtenSetter();
     private boolean working = false;
     private Stoplichten status;
@@ -39,7 +32,7 @@ public class ControllerEndpoint {
     public void onMessage(final Session session, final Verkeer message) throws InterruptedException, IOException {
         if(!working) {
             working = true;
-            status = setter.SetLights(message);
+            status = setter.SetGreen(message);
 
             try{
                 session.getBasicRemote().sendObject(status);
@@ -71,7 +64,7 @@ public class ControllerEndpoint {
                 public void run() {
                     try {
                         System.out.println("Do i get here");
-                        session.getBasicRemote().sendObject(setter.SetRed(status));
+                        session.getBasicRemote().sendObject(setter.SetGreen(status));
                     } catch (IOException | EncodeException  e) {
                        System.out.println("Red fail");
                        working = false;

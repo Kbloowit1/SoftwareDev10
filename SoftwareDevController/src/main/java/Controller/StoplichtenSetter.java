@@ -1,5 +1,6 @@
 package Controller;
 
+
 import Serverside.Stoplichten;
 
 import java.util.HashMap;
@@ -7,7 +8,7 @@ import java.util.HashMap;
 public class StoplichtenSetter {
 Heuristics heuristics = new Heuristics();
 
-    public Stoplichten SetLights(Verkeer verkeer){
+    public Stoplichten SetGreen(Verkeer verkeer){
        return heuristics.algo(verkeer.getMap());
 
 
@@ -205,7 +206,7 @@ Heuristics heuristics = new Heuristics();
         return stoplichten;
     }
 
-    public Stoplichten SetRed(Stoplichten stoplichten)
+    public Stoplichten SetGreen(Stoplichten stoplichten)
     {
         HashMap<String, Integer> status = stoplichten.getMap();
 
@@ -396,10 +397,6 @@ Heuristics heuristics = new Heuristics();
         return stoplichten;
     }
 
-    public String gettext() throws InterruptedException {
-        Thread.sleep(4000);
-        return("Ok");
-    }
 
 
 
