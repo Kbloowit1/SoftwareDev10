@@ -21,11 +21,11 @@ public class Heuristics {
         lightmap.put("B3", new String[]{"A1", "C1", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4"});
         lightmap.put("B4", new String[]{"A1", "B5", "BB1", "C2", "E1", "EV1", "EV2", "EV3", "FF1", "FF2","FV2","FV4"});
         lightmap.put("B5", new String[]{"A1", "B4", "C2"});
-        lightmap.put("BB1", new String[]{"A1", "B4", "C2", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4" });
-        lightmap.put("C1", new String[]{"A1", "A2", "A3", "AB1", "AB2","B1", "B2", "B3", "D1", "D2", "D3", "GF1", "GF2", "GV2", "GV4"});
+        lightmap.put("BB1", new String[]{"A1", "B4", "C1", "C2", "C3", "D1", "D2", "D3", "E1", "EV1", "EV2", "EV3", "GF1", "GF2", "GV2", "GV4" });
+        lightmap.put("C1", new String[]{"A1", "A2", "A3", "AB1", "AB2", "B1", "B2", "B3", "D1", "D2", "D3", "GF1", "GF2", "GV2", "GV4"});
         lightmap.put("C2", new String[]{"A1", "A2", "A3", "A4", "AB1", "AB2", "B1", "B2", "B3", "B4", "B5", "BB1", "D1", "FF1", "FF2", "FV4"});
         lightmap.put("C3", new String[]{"A2", "A3", "AB1", "BB1", "D1", "E1", "EV2", "EV4"});
-        lightmap.put("D1", new String[]{"A1", "A2", "A3", "AB1", "AB2", "B1", "B2", "B3", "C2", "C3", "E1", "EV2", "EV4", "FF1", "FF2", "FV1", "FV3"});
+        lightmap.put("D1", new String[]{"A1", "A2", "A3", "AB1", "AB2", "BB1", "B1", "B2", "B3", "C2", "C3", "E1", "EV2", "EV4", "FF1", "FF2", "FV1", "FV3"});
         lightmap.put("D2", new String[]{"A1", "A2", "A3", "A4", "AB1", "AB2", "B1", "B2", "B3", "BB1","C1", "FF1", "FF2", "FV1", "FV3"});
         lightmap.put("D3", new String[]{"B2", "BB1", "B3", "C1", "GF1", "GF2", "GV2", "GV4", "FF1", "FF2", "FV1", "FV3"});
         lightmap.put("E1", new String[]{"A2", "A3", "AB1", "B1", "B2", "B3", "B4", "C3", "D1"});
@@ -48,10 +48,10 @@ public class Heuristics {
         lightmap.put("GV4", new String[]{"B2", "B3", "C1", "D3", "BB1"});
 
     }
-
+    //Hier wordt het patroon gemaakt
     public Stoplichten algo(HashMap<String, Integer> verkeermap){
         Stoplichten stoplichten = new Stoplichten();
-
+        //Bussen hebben voorang
         stoplichten = BusPrioriteit(verkeermap, stoplichten);
 
 
@@ -356,7 +356,7 @@ public class Heuristics {
         System.out.print(stoplichten);
         return stoplichten;
     }
-
+    //Checken of stoplicht dat je op groen wil zetten op groen kan zonder problemen met andere banen
     public boolean checkconflictzones(String[] conflictzones, Stoplichten stoplichten){
         for (String i : conflictzones)
         {
@@ -576,6 +576,7 @@ public class Heuristics {
 
       return true;
     }
+    //Bussen mogen eerst waar mogelijk
     public Stoplichten BusPrioriteit(HashMap<String, Integer> verkeermap, Stoplichten stoplichten)
     {
         for(String i : verkeermap.keySet())

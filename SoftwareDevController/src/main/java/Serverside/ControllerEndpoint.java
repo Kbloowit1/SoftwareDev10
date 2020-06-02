@@ -64,7 +64,7 @@ public class ControllerEndpoint {
                 public void run() {
                     try {
                         System.out.println("Do i get here");
-                        session.getBasicRemote().sendObject(setter.SetGreen(status));
+                        session.getBasicRemote().sendObject(setter.SetRed(status));
                     } catch (IOException | EncodeException  e) {
                        System.out.println("Red fail");
                        working = false;
@@ -83,6 +83,7 @@ public class ControllerEndpoint {
             timer.schedule(red, 11500);
             timer.schedule(waitforred, 17500);
         }
+        // Ignore any incoming messages while in a cycle
         else{
             System.out.println("its working");
         }

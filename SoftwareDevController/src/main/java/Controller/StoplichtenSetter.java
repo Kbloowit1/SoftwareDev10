@@ -14,6 +14,7 @@ Heuristics heuristics = new Heuristics();
 
     }
 
+    //Sets all currently green lights to orange
     public Stoplichten SetOrange(Stoplichten stoplichten) throws InterruptedException {
         HashMap<String, Integer> status = stoplichten.getMap();
 
@@ -206,7 +207,8 @@ Heuristics heuristics = new Heuristics();
         return stoplichten;
     }
 
-    public Stoplichten SetGreen(Stoplichten stoplichten)
+    //Sets all currently orange lights to red
+    public Stoplichten SetRed(Stoplichten stoplichten)
     {
         HashMap<String, Integer> status = stoplichten.getMap();
 
