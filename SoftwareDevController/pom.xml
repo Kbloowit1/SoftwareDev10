@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <properties>
-        <jetty.version>9.4.27.v20200227</jetty.version>
+        <jetty.version>9.4.41.v20210516</jetty.version>
     </properties>
 
     <dependencies>
